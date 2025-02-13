@@ -1,1 +1,1 @@
-# This is a project data science
+# This is a project  of data science
