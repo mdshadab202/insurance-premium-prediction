@@ -1,0 +1,2 @@
+[ 2025-02-18 17:11:13,478 ] 136 root - INFO - Data Ingestion has started.
+[ 2025-02-18 17:11:13,478 ] 164 root - ERROR - Error occurred during data ingestion: Dataset not found at notebooks/data\data.csv

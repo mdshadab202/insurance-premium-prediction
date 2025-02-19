@@ -3,5 +3,4 @@ setup.py
 data_science_project.egg-info/PKG-INFO
 data_science_project.egg-info/SOURCES.txt
 data_science_project.egg-info/dependency_links.txt
-data_science_project.egg-info/requires.txt
 data_science_project.egg-info/top_level.txt

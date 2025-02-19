@@ -15,12 +15,6 @@ def get_requirements(file_path: str) -> List[str]:
         if HYPEN_E_DOT in requirements:
             requirements.remove(HYPEN_E_DOT)
         
-<<<<<<< HEAD
-    return requirements  # Make sure this is outside the 'with' block##
-=======
-    return requirements  # Make sure this is outside the 'with' block ##
-    
->>>>>>> 11d6d3f3f5b43b3ea55f5919799e7601c7a05eec
 
 setup(
     name="data science project",

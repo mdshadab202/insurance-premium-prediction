@@ -1,0 +1,4 @@
+[ 2025-02-18 15:06:22,511 ] 12 root - INFO - The excution has started
+[ 2025-02-18 15:06:22,511 ] 135 root - INFO - Data Ingestion has started.
+[ 2025-02-18 15:06:22,511 ] 163 root - ERROR - Error occurred during data ingestion: Dataset not found at notebooks/data\insurance.csv
+[ 2025-02-18 15:06:22,511 ] 24 root - INFO - Custom_Exception

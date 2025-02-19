@@ -1,9 +1,7 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.2
 Name: data-science-project
 Version: 0.0.1
 Author: shadab
 Author-email: shadab@tamarsoftware.in
-Requires-Dist: numpy
-Requires-Dist: pandas
-Requires-Dist: matplotlib
-Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: author-email

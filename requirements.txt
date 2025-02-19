@@ -2,4 +2,7 @@ numpy
 pandas
 matplotlib
 scikit-learn
+python_dotenv
+mysql-connector_python
+pymysql
 -e .
