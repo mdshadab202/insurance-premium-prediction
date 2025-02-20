@@ -1,0 +1,5 @@
+[ 2025-02-19 11:21:31,102 ] 12 root - INFO - The excution has started
+[ 2025-02-19 11:21:31,102 ] 136 root - INFO - Data Ingestion has started.
+[ 2025-02-19 11:21:31,106 ] 146 root - INFO - Data successfully read from CSV.
+[ 2025-02-19 11:21:31,108 ] 152 root - INFO - Performing Train-Test Split...
+[ 2025-02-19 11:21:31,108 ] 159 root - INFO - Data ingestion completed successfully.

@@ -108,16 +108,16 @@
 
 
 
-
+import sys
+import os
+import pandas as pd
 from src.Mlproject.logger import logging
 from src.Mlproject.exception import CustomException
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 # from src.Mlproject.components.data_transformation import DataTransformation
 # from src.Mlproject.components.model_trainer import ModelTrainer
-import sys
-import os
-import pandas as pd
+
 # from src.Mlproject.utils import 
 
 # Creating a DataClass
@@ -142,13 +142,17 @@ class DataIngestion:
                 raise FileNotFoundError(f"Dataset not found at {data_path}")
 
             # Read CSV as DataFrame
+            # df = pd.read_csv(os.path.join('notebook/data',"insurance.csv"))
             df = pd.read_csv(data_path)
             logging.info('Data successfully read from CSV.')
 
             # Create directories for saving data
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
             df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
-
+            
+            logging.info("Raw data saved successfully.")
+            
+            # Split data into train and test sets
             logging.info('Performing Train-Test Split...')
             train_set, test_set = train_test_split(df, test_size=0.20, random_state=42)
 
@@ -156,7 +160,9 @@ class DataIngestion:
             train_set.to_csv(self.ingestion_config.train_data_path, index=False)
             test_set.to_csv(self.ingestion_config.test_data_path, index=False)
 
-            logging.info('Data ingestion completed successfully.')
+            # logging.info('Data ingestion completed successfully.')
+            logging.info(f"Data split complete. Train shape: {train_set.shape}, Test shape: {test_set.shape}")
+
 
             return self.ingestion_config.train_data_path, self.ingestion_config.test_data_path
 
