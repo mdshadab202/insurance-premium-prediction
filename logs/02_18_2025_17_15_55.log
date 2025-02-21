@@ -1,2 +1,0 @@
-[ 2025-02-18 17:15:56,899 ] 136 root - INFO - Data Ingestion has started.
-[ 2025-02-18 17:15:56,899 ] 164 root - ERROR - Error occurred during data ingestion: Dataset not found at notebooks/data\insurance.csv

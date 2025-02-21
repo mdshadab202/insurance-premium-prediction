@@ -13,7 +13,7 @@ list_of_files=[
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/components/data_ingestion.py",
     f"src/{project_name}/components/data_transformation.py",
-    f"src/{project_name}/componrents/model_tranier.py",
+    f"src/{project_name}/componrents/model_trainer.py",
     f"src/{project_name}/componeents/model_monitoring.py",
     f"src/{project_name}/pipelines/__init__.py",
     f"src/{project_name}/pipelines/training_pipeline.py",

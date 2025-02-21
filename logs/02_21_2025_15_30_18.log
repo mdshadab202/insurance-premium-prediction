@@ -1,0 +1,26 @@
+[ 2025-02-21 15:30:20,512 ] 77 root - INFO - Execution has started
+[ 2025-02-21 15:30:20,512 ] 136 root - INFO - Data Ingestion has started.
+[ 2025-02-21 15:30:20,516 ] 147 root - INFO - Data successfully read from CSV.
+[ 2025-02-21 15:30:20,523 ] 153 root - INFO - Raw data saved successfully.
+[ 2025-02-21 15:30:20,523 ] 156 root - INFO - Performing Train-Test Split...
+[ 2025-02-21 15:30:20,523 ] 164 root - INFO - Data split complete. Train shape: (1070, 7), Test shape: (268, 7)
+[ 2025-02-21 15:30:20,570 ] 184 root - INFO - Reading the train and test datasets.
+[ 2025-02-21 15:30:20,570 ] 166 root - INFO - Categorical columns: ['sex', 'smoker', 'region']
+[ 2025-02-21 15:30:20,570 ] 167 root - INFO - Numerical columns: ['age', 'bmi', 'children']
+[ 2025-02-21 15:30:20,570 ] 198 root - INFO - Applying preprocessing on training and test datasets.
+[ 2025-02-21 15:30:20,602 ] 206 root - INFO - Saving preprocessing object.
+[ 2025-02-21 15:30:20,605 ] 24 root - INFO - Splitting dependent and independent variables.
+[ 2025-02-21 15:30:21,130 ] 93 root - ERROR - Custom_Exception
+Traceback (most recent call last):
+  File "S:\end to end ds project\src\Mlproject\components\model_trainer.py", line 38, in train_model
+    best_model_name = max(model_report, key=model_report.get())
+TypeError: get expected at least 1 argument, got 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "S:\end to end ds project\app.py", line 90, in <module>
+    model_trainer.train_model(train_arr, test_arr)
+  File "S:\end to end ds project\src\Mlproject\components\model_trainer.py", line 48, in train_model
+    raise CustomException(e, sys)
+src.Mlproject.exception.CustomException: Error occured in python script name [S:\end to end ds project\src\Mlproject\components\model_trainer.py] line number [38] error message[get expected at least 1 argument, got 0]

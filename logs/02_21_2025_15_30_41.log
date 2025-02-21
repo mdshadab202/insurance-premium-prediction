@@ -1,0 +1,28 @@
+[ 2025-02-21 15:30:42,715 ] 77 root - INFO - Execution has started
+[ 2025-02-21 15:30:42,715 ] 136 root - INFO - Data Ingestion has started.
+[ 2025-02-21 15:30:42,715 ] 147 root - INFO - Data successfully read from CSV.
+[ 2025-02-21 15:30:42,731 ] 153 root - INFO - Raw data saved successfully.
+[ 2025-02-21 15:30:42,731 ] 156 root - INFO - Performing Train-Test Split...
+[ 2025-02-21 15:30:42,739 ] 164 root - INFO - Data split complete. Train shape: (1070, 7), Test shape: (268, 7)
+[ 2025-02-21 15:30:42,779 ] 184 root - INFO - Reading the train and test datasets.
+[ 2025-02-21 15:30:42,779 ] 166 root - INFO - Categorical columns: ['sex', 'smoker', 'region']
+[ 2025-02-21 15:30:42,779 ] 167 root - INFO - Numerical columns: ['age', 'bmi', 'children']
+[ 2025-02-21 15:30:42,779 ] 198 root - INFO - Applying preprocessing on training and test datasets.
+[ 2025-02-21 15:30:42,799 ] 206 root - INFO - Saving preprocessing object.
+[ 2025-02-21 15:30:42,802 ] 24 root - INFO - Splitting dependent and independent variables.
+[ 2025-02-21 15:30:43,205 ] 36 root - INFO - model_report:
+ {'Linear Regression': {'MSE': 33600065.3550778, 'R2 Score': 0.7835726930039908}, 'Decision Tree': {'MSE': 41083496.20272947, 'R2 Score': 0.7353698467198435}, 'Random Forest': {'MSE': 21307484.670259636, 'R2 Score': 0.8627526024931934}}
+[ 2025-02-21 15:30:43,205 ] 93 root - ERROR - Custom_Exception
+Traceback (most recent call last):
+  File "S:\end to end ds project\src\Mlproject\components\model_trainer.py", line 38, in train_model
+    best_model_name = max(model_report, key=model_report.get())
+TypeError: get expected at least 1 argument, got 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "S:\end to end ds project\app.py", line 90, in <module>
+    model_trainer.train_model(train_arr, test_arr)
+  File "S:\end to end ds project\src\Mlproject\components\model_trainer.py", line 48, in train_model
+    raise CustomException(e, sys)
+src.Mlproject.exception.CustomException: Error occured in python script name [S:\end to end ds project\src\Mlproject\components\model_trainer.py] line number [38] error message[get expected at least 1 argument, got 0]

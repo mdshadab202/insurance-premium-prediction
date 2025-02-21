@@ -1,0 +1,15 @@
+[ 2025-02-21 15:32:38,110 ] 77 root - INFO - Execution has started
+[ 2025-02-21 15:32:38,110 ] 136 root - INFO - Data Ingestion has started.
+[ 2025-02-21 15:32:38,119 ] 147 root - INFO - Data successfully read from CSV.
+[ 2025-02-21 15:32:38,128 ] 153 root - INFO - Raw data saved successfully.
+[ 2025-02-21 15:32:38,128 ] 156 root - INFO - Performing Train-Test Split...
+[ 2025-02-21 15:32:38,134 ] 164 root - INFO - Data split complete. Train shape: (1070, 7), Test shape: (268, 7)
+[ 2025-02-21 15:32:38,176 ] 184 root - INFO - Reading the train and test datasets.
+[ 2025-02-21 15:32:38,176 ] 166 root - INFO - Categorical columns: ['sex', 'smoker', 'region']
+[ 2025-02-21 15:32:38,176 ] 167 root - INFO - Numerical columns: ['age', 'bmi', 'children']
+[ 2025-02-21 15:32:38,178 ] 198 root - INFO - Applying preprocessing on training and test datasets.
+[ 2025-02-21 15:32:38,193 ] 206 root - INFO - Saving preprocessing object.
+[ 2025-02-21 15:32:38,193 ] 24 root - INFO - Splitting dependent and independent variables.
+[ 2025-02-21 15:32:38,571 ] 36 root - INFO - model_report:
+ {'Linear Regression': {'MSE': 33600065.3550778, 'R2 Score': 0.7835726930039908}, 'Decision Tree': {'MSE': 39850275.00827388, 'R2 Score': 0.7433133652584494}, 'Random Forest': {'MSE': 21539566.074742448, 'R2 Score': 0.8612577020266241}}
+[ 2025-02-21 15:32:38,571 ] 41 root - INFO - Best Model Found: Random Forest
