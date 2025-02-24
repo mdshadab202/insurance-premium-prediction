@@ -1,0 +1,30 @@
+[ 2025-02-24 12:16:05,832 ] 77 root - INFO - Execution has started
+[ 2025-02-24 12:16:05,832 ] 136 root - INFO - Data Ingestion has started.
+[ 2025-02-24 12:16:05,851 ] 147 root - INFO - Data successfully read from CSV.
+[ 2025-02-24 12:16:05,851 ] 153 root - INFO - Raw data saved successfully.
+[ 2025-02-24 12:16:05,851 ] 156 root - INFO - Performing Train-Test Split...
+[ 2025-02-24 12:16:05,851 ] 164 root - INFO - Data split complete. Train shape: (1070, 7), Test shape: (268, 7)
+[ 2025-02-24 12:16:05,906 ] 184 root - INFO - Reading the train and test datasets.
+[ 2025-02-24 12:16:05,906 ] 166 root - INFO - Categorical columns: ['sex', 'smoker', 'region']
+[ 2025-02-24 12:16:05,906 ] 167 root - INFO - Numerical columns: ['age', 'bmi', 'children']
+[ 2025-02-24 12:16:05,906 ] 198 root - INFO - Applying preprocessing on training and test datasets.
+[ 2025-02-24 12:16:05,914 ] 206 root - INFO - Saving preprocessing object.
+[ 2025-02-24 12:16:05,914 ] 81 root - INFO - Splitting dependent and independent variables.
+[ 2025-02-24 12:16:06,248 ] 94 root - INFO - Model Report:
+ {'Linear Regression': {'MSE': 33600065.3550778, 'R2 Score': 0.7835726930039908}, 'Decision Tree': {'MSE': 40914989.0012265, 'R2 Score': 0.7364552481750288}, 'Random Forest': {'MSE': 21411475.88728888, 'R2 Score': 0.8620827663242743}}
+[ 2025-02-24 12:16:06,248 ] 93 root - ERROR - Custom_Exception
+Traceback (most recent call last):
+  File "S:\end to end ds project\src\Mlproject\components\model_trainer.py", line 97, in train_model
+    best_model_name = max(model_report, key=lambda k: model_report[k]['r2_score'])
+  File "S:\end to end ds project\src\Mlproject\components\model_trainer.py", line 97, in <lambda>
+    best_model_name = max(model_report, key=lambda k: model_report[k]['r2_score'])
+KeyError: 'r2_score'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "S:\end to end ds project\app.py", line 90, in <module>
+    model_trainer.train_model(train_arr, test_arr)
+  File "S:\end to end ds project\src\Mlproject\components\model_trainer.py", line 116, in train_model
+    raise CustomException(e, sys)
+src.Mlproject.exception.CustomException: Error occured in python script name [S:\end to end ds project\src\Mlproject\components\model_trainer.py] line number [97] error message['r2_score']

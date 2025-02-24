@@ -1,0 +1,91 @@
+<h1> Welcome to the my home page </h1>
+<html>
+<body>
+
+<h2 style="color: rgb(33, 117, 25);" >Health Insurance Premium Prediction </h2>
+
+<img src="https://png.pngtree.com/template/20190316/ourmid/pngtree-insurance-logo-vector-image_80257.jpg"
+alt="insurance image", width="300", height="300", style="float:right">
+
+
+<style>
+
+    html{overflow-y:scroll;}
+    body {
+    background-position: 200%;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+    }
+    
+    </style>
+    
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter Your Age">
+    </div>
+
+    
+<div class="form-group">
+    <label for="sex">Sex:</label>
+    <select id="sex" name="sex">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select>
+</div>
+
+    <div class="form-group">  
+        <label for="bmi">BMI:</label>
+        <input type="text" id="bmi" name="bmi" placeholder="Enter BMI">
+    </div>
+    
+    
+    
+
+<div class="form-group">
+<label for="children">Children:</label>
+<select id="children" name="children">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="smoker">Smoker:</label>
+<select id="smoker" name="smoker">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+    
+</select>
+</div>
+
+<div class="form-group">
+    <label for="region">Region:</label>
+    <select id="region" name="region">
+    <option value="southeast">Southeast</option>
+    <option value="northwest">Northwest</option>
+    <option value="southwest">Southwest</option>
+    <option value="northeast">Northeast</option>
+    
+    </select>
+</div>
+
+<div style="clear:both;"></div>
+<input type="submit" value="Submit">
+</form>
+<h2>
+    THE prediction is {{results}}
+
+</h2>
+
+</body>
+</html>

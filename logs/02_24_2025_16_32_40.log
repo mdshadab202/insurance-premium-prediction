@@ -1,0 +1,8 @@
+[ 2025-02-24 16:32:40,791 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-02-24 16:32:40,793 ] 97 werkzeug - INFO -  * Debugger PIN: 613-104-845
+[ 2025-02-24 16:32:47,573 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:32:47] "GET / HTTP/1.1" 200 -
+[ 2025-02-24 16:32:53,338 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:32:53] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[ 2025-02-24 16:32:54,337 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:32:54] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:32:54,341 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:32:54] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:32:54,363 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:32:54] "GET /prediction?__debugger__=yes&cmd=resource&f=console.png&s=TONUn9n29WlyrwOG9Fh6 HTTP/1.1" 200 -
+[ 2025-02-24 16:33:55,174 ] 97 werkzeug - INFO -  * Detected change in 'S:\\end to end ds project\\src\\Mlproject\\pipelines\\prediction_pipelines.py', reloading

@@ -1,0 +1,13 @@
+[ 2025-02-24 16:18:08,200 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-02-24 16:18:08,215 ] 97 werkzeug - INFO -  * Debugger PIN: 613-104-845
+[ 2025-02-24 16:18:23,910 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:18:23] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[ 2025-02-24 16:18:24,325 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:18:24] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:18:24,325 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:18:24] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:18:24,348 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:18:24] "GET /prediction?__debugger__=yes&cmd=resource&f=console.png&s=WwlgTlMCAzhQicNKTyk1 HTTP/1.1" 200 -
+[ 2025-02-24 16:18:24,373 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:18:24] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:18:43,253 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:18:43] "GET / HTTP/1.1" 200 -
+[ 2025-02-24 16:18:59,973 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:18:59] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[ 2025-02-24 16:19:00,018 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:19:00] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:19:00,022 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:19:00] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:19:00,036 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:19:00] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=console.png&s=WwlgTlMCAzhQicNKTyk1 HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:20:37,893 ] 97 werkzeug - INFO -  * Detected change in 's:\\end to end ds project\\app.py', reloading

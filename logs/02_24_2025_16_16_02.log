@@ -1,0 +1,10 @@
+[ 2025-02-24 16:16:02,218 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-02-24 16:16:02,218 ] 97 werkzeug - INFO -  * Debugger PIN: 613-104-845
+[ 2025-02-24 16:16:33,417 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:16:33] "GET / HTTP/1.1" 200 -
+[ 2025-02-24 16:16:33,614 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:16:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2025-02-24 16:17:26,532 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:17:26] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[ 2025-02-24 16:17:26,896 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:17:26] "GET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2025-02-24 16:17:26,897 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:17:26] "GET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2025-02-24 16:17:26,971 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:17:26] "GET /prediction?__debugger__=yes&cmd=resource&f=console.png&s=xpykXUYhY7w5pAkMn6Sk HTTP/1.1" 200 -
+[ 2025-02-24 16:17:27,007 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:17:27] "GET /prediction?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2025-02-24 16:17:53,175 ] 97 werkzeug - INFO -  * Detected change in 'S:\\end to end ds project\\app.py', reloading

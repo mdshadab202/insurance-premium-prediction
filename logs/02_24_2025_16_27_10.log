@@ -1,0 +1,18 @@
+[ 2025-02-24 16:27:10,172 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-02-24 16:27:10,179 ] 97 werkzeug - INFO -  * Debugger PIN: 613-104-845
+[ 2025-02-24 16:27:30,273 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:27:30] "GET / HTTP/1.1" 200 -
+[ 2025-02-24 16:27:37,547 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:27:37] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[ 2025-02-24 16:27:38,288 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:27:38] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:27:38,288 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:27:38] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:27:38,328 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:27:38] "GET /prediction?__debugger__=yes&cmd=resource&f=console.png&s=LLuCF8LaP1BfFxxDXZ5j HTTP/1.1" 200 -
+[ 2025-02-24 16:27:47,771 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:27:47] "GET / HTTP/1.1" 200 -
+[ 2025-02-24 16:28:00,536 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:28:00] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[ 2025-02-24 16:28:00,583 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:28:00] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:28:00,590 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:28:00] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:28:00,611 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:28:00] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=console.png&s=LLuCF8LaP1BfFxxDXZ5j HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:28:55,833 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:28:55] "GET / HTTP/1.1" 200 -
+[ 2025-02-24 16:29:08,190 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:29:08] "[35m[1mPOST /prediction HTTP/1.1[0m" 500 -
+[ 2025-02-24 16:29:08,237 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:29:08] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:29:08,237 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:29:08] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:29:08,259 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Feb/2025 16:29:08] "[36mGET /prediction?__debugger__=yes&cmd=resource&f=console.png&s=LLuCF8LaP1BfFxxDXZ5j HTTP/1.1[0m" 304 -
+[ 2025-02-24 16:30:01,432 ] 97 werkzeug - INFO -  * Detected change in 'S:\\end to end ds project\\src\\Mlproject\\pipelines\\prediction_pipelines.py', reloading

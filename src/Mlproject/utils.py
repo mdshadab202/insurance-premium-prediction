@@ -1,6 +1,7 @@
 import os
 import sys
 import pickle
+import dill
 import numpy as np
 import pandas as pd
 from dotenv import load_dotenv
@@ -77,7 +78,7 @@ def evaluate_models(models, X_train, y_train, X_test, y_test):
             mse = mean_squared_error(y_test, y_pred)
             r2 = r2_score(y_test, y_pred)
 
-            results[model_name] = {"MSE": mse, "R2 Score": r2}
+            results[model_name] = {"MSE": mse, "r2_score": r2}
 
         return results
 
@@ -104,3 +105,12 @@ def perform_grid_search(model, param_grid, X_train, y_train):
 
     except Exception as e:
         raise CustomException(e, sys)
+
+
+def load_object(file_path):
+    try:
+        with open(file_path,"rb") as file_obj:
+            return dill.load(file_obj)
+        
+    except Exception as e:
+        raise CustomException(e,sys)
