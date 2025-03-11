@@ -17,7 +17,7 @@ def index():
 @app.route('/prediction',methods=['GET','POST'])
 def predict_datapoint():
     if request.method=='GET':
-        return render_template('home.html')
+        return render_template('index.html')
     else:
         data =CustomData(
             age=int(request.form.get('age')),
